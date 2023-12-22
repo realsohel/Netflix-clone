@@ -16,6 +16,7 @@
     "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
   }
 }
