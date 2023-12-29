@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import Home from './pages/home'
 
 import { AuthContextProvider } from './context/authContext'
+import Account from './pages/account'
+import ProtectedRoute from './components/ProtectedRoute'
 
 const App = () => {
   return (
@@ -14,9 +16,10 @@ const App = () => {
       <AuthContextProvider>
         <Navbar/>
         <Routes>
+          <Route exact path="/" element={<Home/>}/>
           <Route exact path="/login" element={<Login/>}/>
           <Route exact path="/signup" element={<Signup/>}/>
-          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/account" element={<ProtectedRoute><Account/></ProtectedRoute> }/>
         </Routes>
       </AuthContextProvider>
 

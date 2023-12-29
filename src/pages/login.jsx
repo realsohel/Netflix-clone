@@ -6,14 +6,14 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
-    const { user, logIn } = UserAuth();
+    const { user, login } = UserAuth();
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('')
         try {
-        await logIn(email, password)
+        await login(email, password)
         navigate('/')
         } catch (error) {
         console.log(error);
