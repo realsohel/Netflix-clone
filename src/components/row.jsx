@@ -13,7 +13,7 @@ const Row = ({title, fetchUrl, rowID}) => {
         })
     },[fetchUrl]);
     
-    console.log(movies)
+    // console.log(movies)
 
     const slideLeft = ()=>{
         let slider = document.getElementById('slider'+rowID)
